@@ -1,0 +1,13 @@
+#loginDialog{
+	width: 300px;
+	margin: auto;
+	margin-top: 150px;
+}
+
+.loginGrid{
+	background-color: #f2f2f2;
+	border-radius: 6px;
+	border: 1px solid black;
+	padding: 10px;
+}
+

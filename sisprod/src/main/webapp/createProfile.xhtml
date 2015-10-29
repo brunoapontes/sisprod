@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui">
+<h:head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>#{msg.createProfile_title}</title>
+
+	<h:outputStylesheet library="css" name="createProfile.css" />
+</h:head>
+<h:body>
+
+
+	<div>
+
+		<div id="signLeftDiv" class="left ">
+			<h:form>
+				<p:messages id="messages" showDetail="true" autoUpdate="true" closable="true" />
+				<p:panelGrid columns="1">
+					<f:facet name="header">
+					#{msg.createProfile_title}
+					</f:facet>
+
+					<p:outputLabel value="#{msg.createProfile_user}" for="user" />
+					<p:inputText id="user" required="true" />
+
+					<p:outputLabel value="#{msg.createProfile_password}" for="password" />
+					<p:inputText id="password" required="true" />
+
+					<p:outputLabel value="#{msg.createProfile_repeatPassword}"
+						for="confirmPassword" />
+					<p:inputText id="confirmPassword" required="true" />
+
+					<p:outputLabel value="#{msg.createProfile_email}" for="email" />
+					<p:inputText id="email" required="true" />
+					<p:panelGrid columns="2">
+						<p:selectBooleanCheckbox id="checkBox" />
+						<p:outputLabel value="#{msg.createProfile_agree}" for="checkBox" />
+
+					</p:panelGrid>
+					<p:panelGrid>
+						<p:commandButton value="#{msg.createProfile_create}" />
+					</p:panelGrid>
+
+
+
+				</p:panelGrid>
+			</h:form>
+
+		</div>
+
+
+		<div id="signrighttDiv" class="right">
+			<h1>#{msg.createProfile_termsUseTitle}</h1>
+			#{msg.createProfile_termsUse}
+
+
+		</div>
+		<div id="signrighttDiv" class="right">
+			<h1>#{msg.createProfile_privacyTitle}</h1>
+			#{msg.createProfile_privacy}
+
+
+		</div>
+
+
+	</div>
+
+
+
+</h:body>
+</html>

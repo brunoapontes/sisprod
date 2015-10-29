@@ -1,0 +1,45 @@
+<ui:composition template="/WEB-INF/template/StandardLayout.xhtml"
+	xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:p="http://primefaces.org/ui">
+
+	<h:head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<h:outputStylesheet library="css" name="index.css" />
+	</h:head>
+
+
+	<ui:define name="contentPageTitle">
+			#{msg.index_welcome}
+		</ui:define>
+
+
+	<ui:define name="contentPageBody" style="horizontal-align:center">
+		<p>#{msg.index_msg}</p>
+
+		<p:panelGrid>
+			<p:link outcome="explore" value="#{msg.index_buttonExploreSystem}" />
+			<p:link outcome="createProfile" value="#{msg.index_buttonCreateProfile}"/>
+			<p:link outcome="login" value="#{msg.index_buttonLogin}"/>
+
+		</p:panelGrid>
+
+
+		<p:panelGrid>
+
+
+
+			<p:commandButton value="#{msg.index_buttonExploreSystem}" outcome="explore" />
+			<p:commandButton value="#{msg.index_buttonCreateProfile}" />
+			<p:commandButton value="#{msg.index_buttonLogin}" />
+
+
+
+		</p:panelGrid>
+		<br />
+		<br />
+	</ui:define>
+
+</ui:composition>

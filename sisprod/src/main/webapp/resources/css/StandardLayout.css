@@ -1,0 +1,43 @@
+@CHARSET "utf-8";
+
+header {
+	padding: 5px 5px;
+	margin-bottom: 30px;
+	height: 45px;
+	background-color: silver;
+	color: black;
+	box-shadow: 0px 4px;
+}
+
+
+
+
+body {
+	font-size: 14px;
+	font-family: Arial, Helvetica, sans-serif;
+	margin: 5px;
+	font-weight: normal;
+}
+
+
+
+#contentTitle {
+	font-size: 36px;
+	padding-bottom: 20px;
+	text-align: center;
+}
+
+#contentBody {
+	padding-bottom: 5px;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px: 
+	font-size: 32px;
+	text-align: center;
+}
+
+#contentFooter {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}

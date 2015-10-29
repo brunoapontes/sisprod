@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui">
+<h:head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>#{msg.environment_title}</title>
+
+	<h:outputStylesheet library="css" name="myEnvironment.css" />
+</h:head>
+<h:body>
+
+	<h:form id="environmentMenu">
+		<p:tabView orientation="left" activeIndex="0" dynamic="true">
+
+
+			<!-- TAB0 -->
+			<p:tab title="#{msg.environment_tab0}" id="environmentTab0">
+				<p:outputLabel value="'#nome do usuário'" />
+
+				<h:panelGrid columns="2" cellpadding="4">
+
+					<p:outputLabel value="#{msg.environment_tab0_name}" />
+					<p:inputText id="environmentInputName" />
+					<p:outputLabel value="#{msg.environment_tab0_email}" />
+					<p:inputText id="environmentInputEmail" />
+				</h:panelGrid>
+
+				<div id="environmentDivChangePassword">
+					<h:panelGrid id="environmentPanelGridTab0ChangePassword">
+						<p:outputLabel value="#{msg.environment_tab0_ChangePassword}"
+							id="environmentLabelChangePassword" />
+						<p:outputLabel value="#{msg.environment_tab0_oldPassword}" />
+						<p:inputText id="environmentOldPassword" />
+						<p:outputLabel value="#{msg.environment_tab0_newPassword}" />
+						<p:inputText id="environmentNewPassword" />
+						<p:outputLabel value="#{msg.environment_tab0_confirmPassword}" />
+						<p:inputText id="environmentConfirmPassword" />
+						<p:commandButton
+							value="#{msg.environment_tab0_confirmPasswordChangeButton}" />
+						<p:commandButton
+							value="#{msg.environment_tab0_cancelPasswordChangeButton}" />
+					</h:panelGrid>
+				</div>
+
+
+
+			</p:tab>
+
+			<!-- TAB1  -->
+			<p:tab title="#{msg.environment_tab1}" id="environmentTab1">
+				<p:dataTable value="#{msg.environmentTab1DataTableTitle}">
+					<p:column headerText="#{msg.environment_Tab1DataTableColumn0}"></p:column>
+					<p:column headerText="#{msg.environment_Tab1DataTableColumn1}"></p:column>
+					<p:column headerText="#{msg.environment_Tab1DataTableColumn2}"></p:column>
+					<p:column headerText="#{msg.environment_Tab1DataTableColumn3}"></p:column>
+					<p:column headerText="#{msg.environment_Tab1DataTableColumn4}"></p:column>
+					<p:column headerText="#{msg.environment_Tab1DataTableColumn5}"></p:column>
+					<p:column headerText="#{msg.environment_Tab1DataTableColumn6}"></p:column>
+
+				</p:dataTable>
+				<br />
+				<p:toolbar>
+					<p:toolbarGroup align="right">
+						<p:commandButton value="#{msg.crud_button_create}" />
+
+						<p:commandButton value="#{msg.crud_button_recover}" />
+
+						<p:commandButton value="#{msg.crud_button_update}" />
+
+						<p:commandButton value="#{msg.crud_button_delete}" />
+
+						<p:commandButton value="#{msg.crud_button_print}" />
+
+
+					</p:toolbarGroup>
+
+				</p:toolbar>
+
+
+
+
+			</p:tab>
+
+
+
+			<!-- TAB2  -->
+			<p:tab title="#{msg.environment_tab2}" id="environmentTab2">
+				<p:dataTable value="#{msg.environmentTab2DataTableTitle}">
+					<p:column headerText="#{msg.environment_Tab2DataTableColumn0}"></p:column>
+					<p:column headerText="#{msg.environment_Tab2DataTableColumn1}"></p:column>
+					<p:column headerText="#{msg.environment_Tab2DataTableColumn2}"></p:column>
+					<p:column headerText="#{msg.environment_Tab2DataTableColumn3}"></p:column>
+
+				</p:dataTable>
+				<br />
+				<p:toolbar>
+					<p:toolbarGroup align="right">
+						<p:commandButton value="#{msg.crud_button_create}" />
+
+						<p:commandButton value="#{msg.crud_button_recover}" />
+
+						<p:commandButton value="#{msg.crud_button_update}" />
+
+						<p:commandButton value="#{msg.crud_button_delete}" />
+
+						<p:commandButton value="#{msg.crud_button_print}" />
+
+
+					</p:toolbarGroup>
+
+				</p:toolbar>
+
+
+
+
+			</p:tab>
+
+			<!-- TAB3  -->
+			<p:tab title="#{msg.environment_tab3}" id="environmentTab3">
+				<p:dataTable value="#{msg.environmentTab3DataTableTitle}">
+					<p:column headerText="#{msg.environment_Tab3DataTableColumn0}"></p:column>
+					<p:column headerText="#{msg.environment_Tab3DataTableColumn1}"></p:column>
+					<p:column headerText="#{msg.environment_Tab3DataTableColumn2}"></p:column>
+					<p:column headerText="#{msg.environment_Tab3DataTableColumn3}"></p:column>
+
+				</p:dataTable>
+				<br />
+				<p:toolbar>
+					<p:toolbarGroup align="right">
+						<p:commandButton value="#{msg.crud_button_create}" />
+
+						<p:commandButton value="#{msg.crud_button_recover}" />
+
+						<p:commandButton value="#{msg.crud_button_update}" />
+
+						<p:commandButton value="#{msg.crud_button_delete}" />
+
+						<p:commandButton value="#{msg.crud_button_print}" />
+
+
+					</p:toolbarGroup>
+
+				</p:toolbar>
+
+
+
+			</p:tab>
+			<!-- TAB4  -->
+			<p:tab title="#{msg.environment_tab4}" id="environmentTab4">
+				<p:dataTable value="#{msg.environmentTab4DataTableTitle}">
+					<p:column headerText="#{msg.environment_Tab4DataTableColumn0}"></p:column>
+					<p:column headerText="#{msg.environment_Tab4DataTableColumn1}"></p:column>
+					<p:column headerText="#{msg.environment_Tab4DataTableColumn2}"></p:column>
+					<p:column headerText="#{msg.environment_Tab4DataTableColumn3}"></p:column>
+					<p:column headerText="#{msg.environment_Tab4DataTableColumn4}"></p:column>
+				</p:dataTable>
+				<br />
+				<p:toolbar>
+					<p:toolbarGroup align="right">
+						<p:commandButton value="#{msg.crud_button_create}" />
+
+						<p:commandButton value="#{msg.crud_button_recover}" />
+
+						<p:commandButton value="#{msg.crud_button_update}" />
+
+						<p:commandButton value="#{msg.crud_button_delete}" />
+
+						<p:commandButton value="#{msg.crud_button_print}" />
+
+
+					</p:toolbarGroup>
+
+				</p:toolbar>
+
+			</p:tab>
+			<p:tab title="#{msg.environment_tab5}" id="environmentTab5">
+			</p:tab>
+		</p:tabView>
+
+
+	</h:form>
+
+</h:body>
+</html>
